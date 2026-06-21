@@ -29,7 +29,7 @@ export default function App() {
 
       <PodcastProvider initialPodcasts={podcasts}>
         <main className={styles.main}>
-          <section>
+          <section className={styles.controls}>
             <SearchBar />
             <GenreFilter genres={genres} />
             <SortSelect />
