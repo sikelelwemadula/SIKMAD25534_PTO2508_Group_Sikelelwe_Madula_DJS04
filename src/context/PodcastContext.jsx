@@ -109,7 +109,7 @@ const applyFilters = () => {
     /**@type {Podcast[]} */
     const filtered = applyFilters();
     const totalPages = Math.max(1, Math.ceil(filtered.length / pageSize));
-    const currentPage = MAth.min(page, totalPages);
+    const currentPage = Math.min(page, totalPages);
     const paged = filtered.slice(
         (currentPage - 1) * pageSize,
         currentPage * pageSize

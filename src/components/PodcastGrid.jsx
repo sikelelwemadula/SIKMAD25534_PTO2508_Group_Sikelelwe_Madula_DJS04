@@ -1,3 +1,5 @@
+import { useContext } from "react";
+import { PodcastContext } from "../context/PodcastContext";
 import PodcastCard from "./PodcastCard";
 import styles from "./PodcastGrid.module.css";
 

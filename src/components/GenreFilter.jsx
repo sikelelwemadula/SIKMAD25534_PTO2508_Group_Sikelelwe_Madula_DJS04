@@ -5,8 +5,8 @@ import styles from "./GenreFilter.module.css";
 /**
  * @param {{genres: {id:number,name:string}[]}} props - list of genres from data.
  */
-export default function GenreFilter({ genres}) {
-    const { genres, setGenre } = useContext(PodcastContext);
+export default function GenreFilter({ genres }) {
+    const { genre, setGenre } = useContext(PodcastContext);
 
     return (
         <select
